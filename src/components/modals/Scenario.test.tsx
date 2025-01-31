@@ -15,7 +15,7 @@ describe('Modal', () => {
   // because the mockClose function is called in each test case
   // and we want to ensure that the mock is reset before each test case
   // Using BeforeAll would not work in this case because the mockClose function
-  // is called in each test which would result in each concurent adding to the mockClose call count
+  // is called in each test which would result in each consecutive adding to the mockClose call count
 
   beforeEach(() => {
     mockClose.mockReset();
